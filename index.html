@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-    <h1>
+    <h1 id="Kalkulator-BMI">
         Kalkulator BMI
     </h1>
     </header>
@@ -17,7 +17,8 @@
         penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?
         Yuk, hitung sekarang di kalkulator BMI.
     </p>
-    <section class="input-section">
+    <legend>
+    <section id="input-section">
             <label for="jenis-kelamin"><b>Jenis Kelamin</b></label>
             <label><input type="radio" id="jenis-kelamin" value="Pria"> Pria</label>
             <label><input type="radio" id="jenis-kelamin" value="Wanita"> Wanita</label>
@@ -32,20 +33,20 @@
             <input type="number" id="height-input" placeholder="0">
         <br>
     </section>
-    <section class="button-section"></section>
-            <button id="hitung-bmi">Hitung BMI</button>
-            <button id="reset">Reset</button>
+    <section id="button-atas">
+            <button class="hitung-bmi">Hitung BMI</button>
+            <button class="reset">Reset</button>
     </section>
+    </legend>
     <br>
     <p>
         Keunggulan fitur
-        <ol>
+        <ol id="keunggulan">
             <li>Menghitung berat badan</li>
             <li>Menentukan kategori berat badan ideal atau tidak</li>
             <li>Mempersiapkan progam penurunan berat badan</li>
         </ol>
     </p>
-    
     <p>
         Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak 
         boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya
@@ -56,6 +57,37 @@
         umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi
         dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M<sup>2</sup>.
     </p>
-
+    <h1 id="Hasil">Hasil</h1>
+    <legend>
+    <!-- Hasil Hitungan -->
+    <section id="button-tengah">
+    <button class="download-bmi">Download Hasil BMI</button>
+    </section>
+    </legend>
+    <br>
+    <!-- Penjelasan dari Hitungan -->
+    <br>
+    <button class="konsultasi-gizi">Konsultasi Ahli Gizi Via Aplikasi</button>
+    <button class="registrasi-gizi">Registrasi Online Ahli Gizi</button>
+    <p>
+        BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit
+        seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan
+        berat badan Anda.
+    </p>
+    <legend>
+    <h3>
+        Beberapa penyakit yang berasal dari kegemukan
+    </h3>
+        <ul class="list-penyakit" type="none">
+            <li>Diabetes</li>
+            <li>Hipertensi</li>
+            <li>Sakit Jantung</li>
+            <li>Osteoarthritis</li>
+        </ul>
+    <section id="button-bawah">
+    <button class="konsultasi-dokter">Konsultasi Dokter Via Aplikasi</button>
+    <button class="registrasi-online">Registrasi Online Sekarang</button>    
+    </section>
+    </legend>
 </body>
 </html>

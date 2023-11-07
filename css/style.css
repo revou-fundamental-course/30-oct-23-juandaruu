@@ -1,14 +1,51 @@
-.input-section {
+#input-section {
     display: flex;
     flex-direction: column;
-    
 }
 
-.button-section {
-    border-radius: 5%;
+button {
+    border-radius: 5px;
+    border: solid 1px lightgray;
+    padding: 10px;
 }
 
-#hitung-bmi {
-    background-color: #80B3FF;
+button:hover {
+    background-color: #776B5D;
+    color: #EBE3D5;
+}
+
+button:active {
+    box-shadow: 0 5px #666;
+    transform: translateX(2px);
+}
+
+.hitung-bmi, .download-bmi, .konsultasi-gizi, .registrasi-gizi, .konsultasi-dokter, .registrasi-online {
     color: white;
+    background-color: #80B3FF
+}
+
+legend {
+    background-color: #F1EFEF;
+}
+
+body {
+    font-family: Calibri;
+    text-align: justify;
+}
+
+h1, h3 {
+    font-weight: normal;
+}
+
+.download-bmi {
+    color: white;
+    background-color: #80B3FF;
+}
+
+#keunggulan {
+    margin-left: -25px;
+}
+
+#button-bawah, #button-tengah, .list-penyakit, h3 {
+   text-align: center;
 }
