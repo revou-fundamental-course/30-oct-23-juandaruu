@@ -15,6 +15,7 @@ function calculate() {
     } else {
         document.getElementById('result').innerHTML = 'Kegemukan (obesitas)'
     }
+
 }
 
 function reload() {
