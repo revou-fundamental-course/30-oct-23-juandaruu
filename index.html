@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
     <title>Kalkulator BMI</title>
 </head>
 <body>
@@ -24,18 +25,18 @@
             <label><input type="radio" id="jenis-kelamin" value="Wanita"> Wanita</label>
         <br>
             <label for="weight-input"><b>Berat Badan (kg)</b></label>
-            <input type="number" id="weight-input" placeholder="0">
+            <input type="number" id="weight" placeholder="0">
         <br>
             <label for="age-input"><b>Usia (tahun)</b></label>
-            <input type="number" id="age-input" placeholder="0">
+            <input type="number" id="age" placeholder="0">
         <br>
             <label for="height-input"><b>Tinggi badan (cm)</b></label>
-            <input type="number" id="height-input" placeholder="0">
+            <input type="number" id="height" placeholder="0">
         <br>
     </section>
     <section id="button-atas">
-            <button class="hitung-bmi">Hitung BMI</button>
-            <button class="reset">Reset</button>
+            <button class="hitung-bmi" onclick="calculate()">Hitung BMI</button>
+            <button class="reset" onclick="reload()">Reset</button>
     </section>
     </legend>
     <br>
@@ -59,12 +60,15 @@
     </p>
     <h1 id="Hasil">Hasil</h1>
     <legend>
+    <p id="bmi-output"></p>
+    <p id="result"></p>
     <!-- Hasil Hitungan -->
     <section id="button-tengah">
     <button class="download-bmi">Download Hasil BMI</button>
     </section>
     </legend>
     <br>
+    <p id="message"></p>
     <!-- Penjelasan dari Hitungan -->
     <br>
     <button class="konsultasi-gizi">Konsultasi Ahli Gizi Via Aplikasi</button>

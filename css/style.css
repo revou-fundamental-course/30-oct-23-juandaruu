@@ -49,3 +49,17 @@ h1, h3 {
 #button-bawah, #button-tengah, .list-penyakit, h3 {
    text-align: center;
 }
+
+#bmi-output, #result {
+    text-align: center;
+    font-weight: bold;
+}
+
+#bmi-output {
+    font-size: xxx-large;
+}
+
+#result {
+    margin-top: -50px;
+    font-size: x-large;
+}
